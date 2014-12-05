@@ -21,13 +21,15 @@ mixin = ($$, scssSyntax, name, value, modifier) ->
 
   if scssSyntax
     include = '@include '
+    semicolon = ';'
   else
     include = '+'
+    semicolon = ''
 
   if modifier
     value = modifier(value)
 
-  $$ "#{include}#{name}(#{value});"
+  $$ "#{include}#{name}(#{value})#{semicolon}"
 
 
 renderColor = (color, colorVariable) ->
