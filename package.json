@@ -1,0 +1,21 @@
+{
+  "name": "octopus-sass",
+  "title": "Octopus sass",
+  "version": "0.1.0",
+  "description": "Octopus sass",
+  "main": "main",
+  "homepage": "https://github.com/csshat/octopus-sass",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csshat/octopus-sass"
+  },
+  "bugs": {
+    "url": "https://github.com/csshat/octopus-sass/issues"
+  },
+  "author": "Tomas Hanacek <tomashanacek@avocode.com> (https://github.com/tomashanacek)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "octopus-helpers": "^1.2.0"
+  }
+}
