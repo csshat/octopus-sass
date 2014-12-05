@@ -16,13 +16,18 @@ declaration = ($$, scssSyntax, property, value, modifier) ->
   $$ "#{property}: #{value}#{semicolon}"
 
 
-mixin = ($$, name, value, modifier) ->
+mixin = ($$, scssSyntax, name, value, modifier) ->
   return unless value?
+
+  if scssSyntax
+    include = '@include '
+  else
+    include = '+'
 
   if modifier
     value = modifier(value)
 
-  $$ "@include #{name}(#{value});"
+  $$ "#{include}#{name}(#{value});"
 
 
 renderColor = (color, colorVariable) ->
