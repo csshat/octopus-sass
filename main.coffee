@@ -3,7 +3,7 @@ _ = require 'lodash'
 
 
 declaration = ($$, scssSyntax, property, value, modifier) ->
-  return unless value
+  return if not value? or value == ''
 
   if scssSyntax
     semicolon = ';'
